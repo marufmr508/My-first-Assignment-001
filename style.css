@@ -125,3 +125,128 @@ body {
   font-weight: 600;
   font-size: smaller;
 }
+/* .......Secure Your Spot........... */
+.parents-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  gap: 20px;
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgb(63, 65, 67);
+}
+.price-card-1 {
+  padding: 10px 10px;
+
+  /* border: 2px solid red; */
+}
+.benefit-list {
+  padding: 20px;
+  height: 406px;
+  gap: 20px;
+  /* border: 2px solid red; */
+  text-align: center;
+}
+.benefit-list li {
+  padding: 5px;
+  /* border: 2px solid red; */
+  text-align: start;
+}
+.common-btn-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.Button-2 {
+  font-size: 20px;
+  background-color: #1d4ed8;
+  color: aliceblue;
+  border: none;
+  width: 100%;
+  padding: 14px 0;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  /* transition: 0.3s; */
+  margin-top: 30px;
+}
+.Button-1 {
+  font-size: 20px;
+  background-color: #1d4ed8;
+  color: aliceblue;
+  border: none;
+  width: 100%;
+  padding: 14px 0;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  background: white;
+  color: #2563eb;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  /* transition: 0.3s; */
+  margin-top: 30px;
+}
+.Button-3 {
+  font-size: 20px;
+  /* background-color: #1d4ed8; */
+  color: rgb(29, 32, 34);
+  border: none;
+  width: 100%;
+  padding: 14px 0;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  /* transition: 0.3s; */
+  margin-top: 30px;
+}
+.r {
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.price-card-1 h4 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #888888;
+}
+.price-card-1 h3 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.bg-colour {
+  background-color: #0d1b2a;
+  color: aliceblue;
+}
+.pro h4 {
+  color: #9ab5ff;
+}
+.price-card-1 p {
+  font-weight: 200;
+  font-size: 20px;
+  color: #888888;
+}
+hr {
+  margin: 20px 0;
+
+  border: none;
+
+  border-top: 1px solid #e5e7eb;
+}
