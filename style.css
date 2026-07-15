@@ -42,3 +42,86 @@ body {
   border-radius: 5px;
   width: 195px;
 }
+
+.banner-container {
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  color: rgb(92, 164, 227);
+  width: 700px;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  gap: 10px;
+  display: grid;
+}
+.text h1 {
+  font-size: 60px;
+}
+.img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  /* position: absolute; */
+}
+.common-btn1 {
+  text-align: center;
+  background-color: #1d4ed8;
+  color: rgb(248, 255, 240);
+  font-weight: 600;
+  padding: 15px;
+  border-radius: 5px;
+  width: 195px;
+}
+/* .........Meet the speaker....... */
+.speaker-cards {
+  width: auto;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-bottom: 50px;
+}
+.speaker-container {
+  gap: 15px;
+  text-align: start;
+  border-radius: 20px;
+  height: 460px;
+
+  box-shadow: 0 0px 1px 0px rgb(63, 65, 67);
+}
+/* .test h4 {
+  font-weight: bold;
+  font-size: 20px;
+} */
+
+.speaker-container a h4 p {
+  padding-left: 15px;
+}
+.img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+.container h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  text-align: center;
+}
+.test {
+  padding: 15px 15px;
+}
+.test a {
+  text-decoration: none;
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: smaller;
+}
