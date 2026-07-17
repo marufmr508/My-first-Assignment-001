@@ -15,21 +15,21 @@
   <body>
     <header>
       <section class="container">
-        <div class="parents-Nav">
-          <div class="nav1">
+        <div class="nav-bar">
+          <div class="logo-img">
             <img src="./B14-A01-DevConf-2026/assets/logo.png" alt="" />
           </div>
-          <div class="nav2">
+          <div class="nav-links">
             <ul>
-              <li>Speakers</li>
-              <li>Schedule</li>
-              <li>Tracks</li>
-              <li>Venue</li>
-              <li>Blog</li>
+              <li><a href="#">Speakers</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Tracks</a></li>
+              <li><a href="#">Venue</a></li>
+              <li><a href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="nav3">
-            <div class="common-btn">Register Now</div>
+          <div class="nav-action">
+            <button class="common-btn">Register Now</button>
           </div>
         </div>
       </section>
@@ -38,24 +38,23 @@
       <section>
         <div class="banner-container">
           <img
-            class="img"
+            class="banner-img"
             src="./B14-A01-DevConf-2026/assets/banner.jpg"
             alt=""
           />
 
-          <div class="text">
-            <h1>Code. Connect. Create</h1>
+          <div class="banner-content">
+            <div class="banner-head"> 
+            <h1>Code. <span ><i>Connect</i></span>. Create</h1>
             <p>
               Join 4,000+ engineers, founders, and builders at the premier
               developer conference of 2026. Three days of cutting-edge talks,
-              hands-on workshops,<br />
-              and meaningful connections.
+              hands-on workshops, and meaningful connections.
             </p>
-            <div>
-              <button class="common-btn1">Register Now</button>
-            </div>
+           </div>
+          <div>
+            <button class="common-btn1">Register Now</button>
           </div>
-
           <!-- <div class="common-button">Register Now</div> -->
         </div>
       </section>
@@ -65,11 +64,11 @@
         <div class="speaker-cards">
           <div class="speaker-container">
             <img
-              class="img"
+              class="speaker-img"
               src="./B14-A01-DevConf-2026/assets/andrej.png"
               alt=""
             />
-            <div class="test">
+            <div class="text-info">
               <a href="">AI/ML</a>
               <h4>Andrej Karpathy</h4>
               <p>Pretraining team, Anthropic</p>
@@ -77,11 +76,11 @@
           </div>
           <div class="speaker-container">
             <img
-              class="img"
+              class="speaker-img"
               src="./B14-A01-DevConf-2026/assets/demis.png"
               alt=""
             />
-            <div class="test">
+            <div class="text-info">
               <a href="">Cloud & DevOps</a>
               <h4>Demis Hassabis</h4>
               <p>Co-Founder and CEO, Google DeepMind</p>
@@ -89,11 +88,11 @@
           </div>
           <div class="speaker-container">
             <img
-              class="img"
+              class="speaker-img"
               src="./B14-A01-DevConf-2026/assets/gary.png"
               alt=""
             />
-            <div class="test">
+            <div class="text-info">
               <a href="">Frontend</a>
               <h4>Gary Marcus</h4>
               <p>Staff Engineer, Vercel</p>
@@ -101,11 +100,11 @@
           </div>
           <div class="speaker-container">
             <img
-              class="img"
+              class="speaker-img"
               src="./B14-A01-DevConf-2026/assets/mustafa.png"
               alt=""
             />
-            <div class="test">
+            <div class="text-info">
               <a href="">Security</a>
               <h4>Mustafa Suleyman</h4>
               <p>CEO of Microsoft AI</p>
@@ -117,7 +116,7 @@
       <!-- .........Secure Your Spot........ -->
 
       <section class="container">
-        <div class="r">
+        <div class="pricing-header">
           <h1>Secure Your Spot</h1>
           <p>Early-bird pricing ends August 15, 2026.</p>
         </div>
@@ -125,7 +124,7 @@
           <!-- ........price-1.......... -->
           <div class="card">
             <div class="price-card-1">
-              <h4>Standard</h4>
+              <h4>STANDARD</h4>
               <h3>$399</h3>
               <p>per person</p>
             </div>
@@ -140,14 +139,14 @@
                 <li>Digital recordings (30 days)</li>
               </ul>
               <div class="common-btn-1">
-                <button class="Button-1">Get Standard</button>
+                <button class="Button-primary">Get Standard</button>
               </div>
             </div>
           </div>
           <!-- ........price-3.......... -->
           <div class="card bg-colour">
             <div class="price-card-1 pro">
-              <h4>pro</h4>
+              <h4>PRO</h4>
               <h3>$749</h3>
               <p>per person</p>
             </div>
@@ -162,16 +161,16 @@
                 <li>1-on-1 mentorship (30 min)</li>
               </ul>
               <div class="common-btn-1">
-                <button class="Button-2">Get Pro</button>
+                <button class="Button-outline">Get Pro</button>
               </div>
             </div>
           </div>
           <!-- ........price-4.......... -->
           <div class="card">
             <div class="price-card-1">
-              <h4>Team</h4>
+              <h4>TEAM</h4>
               <h3>$5,999</h3>
-              <p>up to 10 person</p>
+              <p>Up to 10 people</p>
             </div>
             <hr />
             <div class="benefit-list">
@@ -184,13 +183,22 @@
                 <li>Priority customer support</li>
               </ul>
               <div class="common-btn-1">
-                <button class="Button-3">Contact Us</button>
+                <button class="Button-dark">Contact Us</button>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <p>hellogitt</p>
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2026 DevConf. All rights reserved.</p>
+
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
