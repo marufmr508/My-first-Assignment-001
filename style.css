@@ -14,9 +14,8 @@ body {
   padding: 0 20px;
 }
 .nav-bar {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  gap: 50px;
+  display: flex;
+  justify-content: space-between;
 
   margin: 20px;
   padding: 20px;
@@ -24,32 +23,36 @@ body {
 }
 .logo-img img {
   width: 144px;
-  height: 40px;
+  /* height: 40px; */
 }
 .nav-links ul {
   display: flex;
   gap: 24px;
-
   list-style: none;
   justify-content: center;
 }
 .nav-links a {
   text-decoration: none;
+  font-weight: 500;
+  color: #111827;
+}
+.nav-links a:hover {
+  color: #2563eb;
 }
 .common-btn {
   text-align: center;
   background-color: #1d4ed8;
   color: aliceblue;
   font-weight: 600;
-  padding: 15px;
+  padding: 15px 30px;
   border-radius: 5px;
-  /* width: 195px; */
   border: none;
+  cursor: pointer;
+  font-weight: 600px;
 }
 @media (max-width: 768px) {
   .nav-bar {
-    grid-template-columns: 1fr;
-
+    flex-direction: column;
     gap: 20px;
 
     text-align: center;
@@ -57,6 +60,7 @@ body {
 
   .nav-links ul {
     flex-direction: column;
+    align-items: center;
 
     gap: 15px;
   }
@@ -88,6 +92,7 @@ body {
 
 .banner-content h1 {
   font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .banner-content p {
@@ -110,7 +115,7 @@ body {
   width: 200px;
   font-size: large;
   cursor: pointer;
-  margin-top: 180px;
+  /* margin-top: 180px; */
 }
 /* .........Meet the speaker....... */
 @media (max-width: 768px) {
@@ -151,6 +156,9 @@ body {
 .banner-content {
   padding: 15px 15px;
 }
+.banner-content p {
+  margin-bottom: 40px;
+}
 .text-info a {
   text-decoration: none;
   color: #1d4ed8;
@@ -163,6 +171,14 @@ body {
 
 /* .......Secure Your Spot........... */
 
+.parents-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* justify-content: space-between;
+  align-items: center; */
+  margin-bottom: 80px;
+  gap: 20px;
+}
 @media (max-width: 1024px) {
   .parents-card {
     grid-template-columns: repeat(2, 1fr);
@@ -173,21 +189,13 @@ body {
     grid-template-columns: 1fr;
   }
 }
-.parents-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 80px;
-  gap: 20px;
-}
-
 .card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 
-  padding: 10px 10px;
-
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 8px 24px rgb(0, 0, 0, 08);
 }
 .card:hover {
@@ -195,12 +203,15 @@ body {
   transition: 3s;
 }
 .price-card-1 {
-  padding: 10px 10px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 .benefit-list {
   padding: 20px;
-  height: 406px;
 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   text-align: center;
 }
 .benefit-list li {
@@ -211,56 +222,31 @@ body {
 .common-btn-1 {
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
 
-.Button-outline {
-  font-size: 20px;
-  background-color: #1d4ed8;
-  color: aliceblue;
-  border: none;
+.button {
   width: 100%;
-  padding: 14px 0;
-  border: 2px solid #2563eb;
+  padding: 14px;
   border-radius: 8px;
-
-  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-
-  margin-top: 30px;
+  transition: 0.3s;
 }
-.Button-primary {
-  font-size: 20px;
+
+.button-outline {
   background-color: #1d4ed8;
-  color: aliceblue;
+  color: #e6e8ee;
   border: none;
-  width: 100%;
-  padding: 14px 0;
-  border: 2px solid #2563eb;
-  border-radius: 8px;
-  background: white;
-  color: #2563eb;
-
-  font-weight: 600;
-  cursor: pointer;
-
-  margin-top: 30px;
 }
-.Button-dark {
-  font-size: 20px;
-
+.button-primary {
+  color: rgb(62, 59, 239);
+  border: 2px solid blue;
+}
+.button-dark {
   color: rgb(29, 32, 34);
-  border: none;
-  width: 100%;
-  padding: 14px 0;
+
   border: 2px solid #2563eb;
-  border-radius: 8px;
-
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-
-  margin-top: 30px;
 }
 .pricing-header {
   margin-bottom: 40px;
@@ -294,6 +280,7 @@ hr {
   border: none;
 
   border-top: 1px solid #e5e7eb;
+
   /* ....................footer................ */
 }
 .footer {
@@ -346,6 +333,7 @@ hr {
   align-items: flex-end;
   margin-bottom: 50px;
 }
+
 .intro-text span {
   color: aqua;
   width: 600px;
@@ -393,6 +381,16 @@ hr {
   align-items: center;
   margin-bottom: 50px;
   /* font-family: "Open Sans", sans-serif; */
+}
+@media (max-width: 1024px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .stat-card {
   /* border: 2px dotted rgb(75, 46, 139); */
