@@ -43,8 +43,23 @@ body {
   font-weight: 600;
   padding: 15px;
   border-radius: 5px;
-  width: 195px;
+  /* width: 195px; */
   border: none;
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    text-align: center;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+
+    gap: 15px;
+  }
 }
 /* ................banner/Hero section........... */
 
@@ -57,7 +72,9 @@ body {
 }
 .banner-content {
   position: absolute;
-  width: 700px;
+  /* width: 700px; */
+  width: 100%;
+  max-width: 700px;
   left: 50%;
   top: 52%;
   transform: translate(-50%, -50%);
@@ -96,6 +113,11 @@ body {
   margin-top: 180px;
 }
 /* .........Meet the speaker....... */
+@media (max-width: 768px) {
+  .speaker-cards {
+    grid-template-columns: 1fr;
+  }
+}
 
 .speaker-cards {
   width: auto;
@@ -140,6 +162,17 @@ body {
 }
 
 /* .......Secure Your Spot........... */
+
+@media (max-width: 1024px) {
+  .parents-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .parents-card {
+    grid-template-columns: 1fr;
+  }
+}
 .parents-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
