@@ -17,23 +17,23 @@ body {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 50px;
-  /* justify-content: space-between; */
+
   margin: 20px;
   padding: 20px;
   align-items: center;
 }
-.logo-img {
+.logo-img img {
   width: 144px;
   height: 40px;
 }
 .nav-links ul {
   display: flex;
   gap: 24px;
-  /* justify-content: space-between; */
+
   list-style: none;
   justify-content: center;
 }
-.nav-links ul a {
+.nav-links a {
   text-decoration: none;
 }
 .common-btn {
@@ -46,42 +46,35 @@ body {
   width: 195px;
   border: none;
 }
-/* ................banner section........... */
+/* ................banner/Hero section........... */
 
 .banner-container {
   position: relative;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
+.banner-container {
+  position: relative;
+}
 .banner-content {
   position: absolute;
-  /* inset: 0; */
-  /* color: rgb(92, 164, 227);
-  colo */
-  color: aliceblue;
   width: 700px;
-  height: 700px;
-  top: 30%;
   left: 50%;
-  text-align: center;
-  align-items: center;
+  top: 52%;
   transform: translate(-50%, -50%);
-  gap: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-top: 120px;
-  /* border: 2px solid red; */
-  margin: 120px;
+  align-items: center;
+  text-align: center;
+  gap: 28px;
+  color: white;
 }
+
 .banner-content h1 {
   font-size: 60px;
 }
 
 .banner-content p {
-  margin-bottom: 30px;
+  margin-top: 20px;
   max-width: 700px;
   line-height: 1.6;
 }
@@ -89,7 +82,6 @@ body {
   width: 100%;
   height: 700px;
   object-fit: cover;
-  /* position: absolute; */
 }
 .common-btn1 {
   text-align: center;
@@ -97,10 +89,11 @@ body {
   color: rgb(248, 255, 240);
   font-weight: 600;
   padding: 15px;
-  border-radius: 5px;
-  width: 195px;
+  border-radius: 8px;
+  width: 200px;
   font-size: large;
-  /* margin-top: 120px; */
+  cursor: pointer;
+  margin-top: 180px;
 }
 /* .........Meet the speaker....... */
 
@@ -111,25 +104,16 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
   padding-bottom: 50px;
-  /* margin-top: 30px; */
 }
 .speaker-container {
   gap: 15px;
   text-align: start;
   border-radius: 20px;
-  height: 440px;
-  /* height: 100%; */
-  box-shadow: 0 0px 1px 0px rgb(63, 65, 67);
-  /* border: 2px solid red; */
-}
-/* .test h4 {
-  font-weight: bold;
-  font-size: 20px;
-} */
+  padding-bottom: 25px;
 
-.speaker-container h4 .speaker-container p {
-  padding-left: 15px;
+  box-shadow: 0 0px 1px 0px rgb(63, 65, 67);
 }
+
 .speaker-img {
   width: 100%;
   height: 350px;
@@ -167,29 +151,28 @@ body {
 
 .card {
   width: 100%;
-  max-height: 500px;
-  /* border: 2px solid red; */
 
   padding: 10px 10px;
 
   border-radius: 5px;
-  box-shadow: 0 8px 20px rgb(63, 65, 67);
+  box-shadow: 0 8px 24px rgb(0, 0, 0, 08);
+}
+.card:hover {
+  transform: translateY(-8px);
+  transition: 3s;
 }
 .price-card-1 {
   padding: 10px 10px;
-
-  /* border: 2px solid red; */
 }
 .benefit-list {
   padding: 20px;
   height: 406px;
-  /* gap: 20px; */
-  /* border: 2px solid red; */
+
   text-align: center;
 }
 .benefit-list li {
   padding: 5px;
-  /* border: 2px solid red; */
+
   text-align: start;
 }
 .common-btn-1 {
@@ -210,7 +193,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  /* transition: 0.3s; */
+
   margin-top: 30px;
 }
 .Button-primary {
@@ -224,15 +207,15 @@ body {
   border-radius: 8px;
   background: white;
   color: #2563eb;
-  /* font-size: 16px; */
+
   font-weight: 600;
   cursor: pointer;
-  /* transition: 0.3s; */
+
   margin-top: 30px;
 }
 .Button-dark {
   font-size: 20px;
-  /* background-color: #1d4ed8; */
+
   color: rgb(29, 32, 34);
   border: none;
   width: 100%;
@@ -309,3 +292,144 @@ hr {
   color: #9ab5ff;
   transition: color 0.3s ease;
 }
+/* ........AI SECTION///////////........ */
+
+.hackathon {
+  /* background-color: rgb(154, 221, 221); */
+  margin: 0 auto;
+  font-family: "JetBrains Mono", monospace;
+  max-width: 1280px;
+}
+
+.hackathon-intro {
+  /* border: 2px dotted blue; */
+  padding: 60px;
+  border-radius: 20px;
+  /* background-color: rgb(56, 56, 179); */
+  background: linear-gradient(135deg, #2193b0, #6dd5ed);
+  color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+.intro-text span {
+  color: aqua;
+  width: 600px;
+}
+.intro-text {
+  /* border: 2px dotted blue; */
+  max-width: 650px;
+}
+.intro-button {
+  /* border: 2px solid rgb(53, 158, 172); */
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #e6e8ee;
+  color: aliceblue;
+  width: 250px;
+  border-radius: 15px;
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: baseline; */
+}
+
+.ai-button {
+  /* gap: 4px; */
+  color: rgb(42, 14, 167);
+  background: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  /* width: 195px; */
+  border: none;
+  /* width: 150px; */
+  /* font-weight: 600; */
+  /* border: 2px solid red; */
+  font-weight: 600;
+  font-size: large;
+}
+.ai-button i {
+  padding-left: 5px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  /* border: 2px dotted seagreen; */
+  align-items: center;
+  margin-bottom: 50px;
+  /* font-family: "Open Sans", sans-serif; */
+}
+.stat-card {
+  /* border: 2px dotted rgb(75, 46, 139); */
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  background-color: #f0f1f4;
+  box-shadow: 0 5px 5px;
+}
+.stat-card:hover {
+  background-color: rgb(190, 211, 211);
+  transform: translateX(10px) scale(0.9);
+}
+.stat-card p {
+  font-weight: bold;
+  font-size: 30px;
+}
+.stat-card h3 {
+  font-weight: 400;
+  font-size: medium;
+}
+.stat-icon {
+  border-radius: 12px;
+  background-color: rgb(246, 251, 251);
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* size: 20px; */
+}
+.hackathon-benefits {
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 70px;
+}
+.benefits-inner {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+.behefits-command {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 10px;
+  align-items: center;
+  /* border: 2px solid red; */
+  border-radius: 15px;
+  padding: 5px 10px;
+  /* gap: 10px;
+  bac */
+  /* background-color: rgb(233, 250, 251); */
+  transition: all 0.3s ease;
+  box-shadow: 0 0px 3px;
+  background-color: rgb(246, 251, 251);
+  /* color: #e6e8ee; */
+}
+.children-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.behefits-command:hover {
+  background-color: rgb(190, 211, 211);
+  transform: translateX(10px) scale(0.9);
+}
+
+/* ........AI SECTION///////////........ */
